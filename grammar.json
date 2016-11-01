@@ -1,0 +1,5 @@
+{
+	"mission": ["assassination", "exfiltration"],
+	"result": ["success", "failure"],
+	"origin": ["The #mission# was #result.a#."]
+}

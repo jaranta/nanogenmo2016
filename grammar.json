@@ -1,5 +1,36 @@
 {
-	"mission": ["assassination", "exfiltration"],
-	"result": ["success", "failure"],
-	"origin": ["The #mission# was #result.a#."]
+	"origin": [
+		"The #mission# was a #result#. #however#, #complication#. #cleanup#."
+	],
+	"result": [
+		"success",
+		"failure"
+	],
+	"mission": [
+		"assassination",
+		"exfiltration"
+	],
+	"complication": [
+		"the target was prepared",
+		"the intel was wrong",
+		"there was interference from #enemy.a#"
+	],
+	"however": [
+		"However",
+		"Regardless"
+	],
+	"enemy": [
+		"foreign nation",
+		"terrorist organization"
+	],
+	"cleanup": [
+		"Exfiltrating assets was #difficult#",
+		"Removing evidence proved #difficult#"
+	],
+	"difficult": [
+		"easy",
+		"difficult",
+		"hard",
+		"harder than expected"
+	]
 }

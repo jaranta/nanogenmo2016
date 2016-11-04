@@ -1,6 +1,6 @@
 	TOP SECRET
 
-MEMORANDUM FOR: Mr. ø¸©šˆø¸©šˆø¸©šˆø¸©šˆ
+MEMORANDUM FOR: Mr. XXXX
 		Dr. XXXX
 	       Col. XXXX
 
@@ -25,3 +25,24 @@ SECRET MEMO
 SECRET ORGANIZATION
 
 	TOP SECRET
+
+-------------------------------
+
+#background#
+
+	#countryprefix# #country# #relatedoperations#
+
+#mission#
+
+	#missionpurpose# #missioncontext# #resistance# #complications#
+#cleanup#
+
+#result#
+	
+	#successorfailure# #effect# #possibleeffects#
+
+#conclusion/final notes#
+
+	#moreactionnecessary#
+
+#attachements#

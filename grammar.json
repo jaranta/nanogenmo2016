@@ -2,6 +2,15 @@
     "origin": [
         "The target was located in #country#. The #mission# was #result.a#. #however#, #complication#. #cleanup#. It is believed that #enemy# is involved in the incident."
     ],
+    "background": [
+	"#countryprefix# #country#. #relatedoperations#."
+    ],
+    "countryprefix": [
+	"The operation was conducted in"
+    ],
+    "relatedoperations": [
+	"This operation was related to operation #codenames#"
+    ],
     "result": [
         "success",
         "failure"

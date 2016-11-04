@@ -26,6 +26,7 @@ var output =
 	"Memorandum for:\n" + getNames(1,5) + "\n\n" + 
     randomDate(new Date(1900, 0, 1), new Date()).toDateString() + "\n\n" +
     "Subject: PROJECT " + grammar.flatten('#codenames#') + "\n\n" +
+    grammar.flatten('#background#') + "\n\n" +
 	grammar.flatten('#origin#') + "\n\n" +
 	"Signed by,\n" + getNames(1,1) + "\n\n" +
     "Classified by " + grammar.flatten('#agencies#') + "\n\n" +

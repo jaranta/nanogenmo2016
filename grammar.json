@@ -11,26 +11,51 @@
     "relatedoperations": [
 	"This operation was related to operation #codenames#"
     ],
-    "result": [
-        "success",
-        "failure"
-    ],
     "mission": [
-        "assassination",
-        "exfiltration"
+        "#missionpurpose#. #missioncontext#. #resistance#. #however#, #complications#."
     ],
-    "complication": [
+    "missionpurpose": [
+	 "The purpose of the mission was #task#",
+         "The goal was #task#"
+    ],
+    "task": [
+    	"to eliminate an enemy asset",
+	"to recover an asset from the enemy"
+    ],
+    "missioncontext": [
+        "The situation was very delicate because of the possible political implications",
+	"The operation was conducted on the basis of intel received from allies"
+    ],
+    "resistance": [
+    	"It was assumed that the resistance would be minimal"
+    ],
+    "complications": [
         "the target was prepared",
         "the intel was wrong",
         "there was interference from #enemy#"
     ],
     "however": [
-        "However",
-        "Despite preparations"
+        "However"
     ],
     "enemy": [
         "#country#",
         "#terrorists#"
+    ],
+    "result": [
+        "#successorfailure#. #possibleeffects#."
+    ],
+    "successorfailure": [
+	"#success#",
+        "#failure#"
+    ],
+    "success": [
+        "The operation was conduceted succesfully"
+    ],
+    "failure": [
+	"The operation failed to meet the goals set"
+    ],
+    "possibleeffects": [
+	"It is possible that the operation resulted in diplomatic tensions with #country#"
     ],
     "cleanup": [
         "Exfiltrating assets was #difficulty#",

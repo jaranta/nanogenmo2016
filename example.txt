@@ -39,7 +39,7 @@ SECRET ORGANIZATION
 
 #result#
 	
-	#successorfailure# #effect# #possibleeffects#
+	#successorfailure# #possibleeffects#
 
 #conclusion/final notes#
 

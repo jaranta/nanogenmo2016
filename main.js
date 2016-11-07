@@ -29,6 +29,8 @@ var output =
     grammar.flatten('#background#') + "\n\n" +
 	grammar.flatten('#mission#') + "\n\n" +
 	grammar.flatten('#result#') + "\n\n" +
+	grammar.flatten('#conclusion#') + "\n\n" +
+	grammar.flatten('#attachements#') + "\n\n" +
 	"Signed by,\n" + getNames(1,1) + "\n\n" +
     "Classified by " + grammar.flatten('#agencies#') + "\n\n" +
 	"TOP SECRET";

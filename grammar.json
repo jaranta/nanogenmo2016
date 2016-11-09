@@ -52,17 +52,22 @@
         "harder than expected"
     ],
     "result": [
-        "#successorfailure#. #possibleeffects#."
+        "#successorfailure# #possibleeffects#."
     ],
     "successorfailure": [
-        "#success#",
-        "#failure#"
+        "#success#. #positiveeffects#.",
+        "#failure#."
     ],
     "success": [
-        "The operation was conducted succesfully"
+        "The operation was conducted succesfully",
+        "The operations was a success"
     ],
     "failure": [
-        "The operation failed to meet the goals set"
+        "The operation failed to meet the goals set",
+        "The operation did not succeed"
+    ],
+    "positiveeffects": [
+        "The operation will result in increased stability in the area"
     ],
     "possibleeffects": [
         "It is possible that the operation resulted in diplomatic tensions with #country#"
@@ -72,7 +77,8 @@
         "#moreactionnecessary#."
     ],
     "moreactionnecessary": [
-        "It necessary to conduct more operations to achieve the goal"
+        "It necessary to conduct more operations to achieve the goal",
+        "It is suggested that more operations are conducted"
     ],
     "attachements": [
         "See the following attachements: #attachement#"

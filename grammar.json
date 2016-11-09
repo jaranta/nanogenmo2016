@@ -3,31 +3,31 @@
         "The target was located in #country#. The #mission# was #result.a#. #however#, #complication#. #cleanup#. It is believed that #enemy# is involved in the incident."
     ],
     "background": [
-	"#countryprefix# #country#. #relatedoperations#."
+        "#countryprefix# #country#. #relatedoperations#."
     ],
     "countryprefix": [
-	"The operation was conducted in"
+        "The operation was conducted in"
     ],
     "relatedoperations": [
-	"This operation was related to operation #codenames#"
+        "This operation was related to operation #codenames#"
     ],
     "mission": [
         "#missionpurpose#. #missioncontext#. #resistance#. #however#, #complications#. #cleanup#."
     ],
     "missionpurpose": [
-	 "The purpose of the mission was #task#",
-         "The goal was #task#"
+        "The purpose of the mission was #task#",
+        "The goal was #task#"
     ],
     "task": [
-    	"to eliminate an enemy asset",
-	"to recover an asset from the enemy"
+        "to eliminate an enemy asset",
+        "to recover an asset from the enemy"
     ],
     "missioncontext": [
         "The situation was very delicate because of the possible political implications",
-	"The operation was conducted on the basis of intel received from allies"
+        "The operation was conducted on the basis of intel received from allies"
     ],
     "resistance": [
-    	"It was assumed that the resistance would be minimal"
+        "It was assumed that the resistance would be minimal"
     ],
     "complications": [
         "the target was prepared",
@@ -55,32 +55,32 @@
         "#successorfailure#. #possibleeffects#."
     ],
     "successorfailure": [
-	"#success#",
+        "#success#",
         "#failure#"
     ],
     "success": [
         "The operation was conducted succesfully"
     ],
     "failure": [
-	"The operation failed to meet the goals set"
+        "The operation failed to meet the goals set"
     ],
     "possibleeffects": [
-	"It is possible that the operation resulted in diplomatic tensions with #country#"
+        "It is possible that the operation resulted in diplomatic tensions with #country#"
     ],
     "conclusion": [
-	"The goal was achieved in a satisfactory manner.",
-	"#moreactionnecessary.#"
+        "The goal was achieved in a satisfactory manner.",
+        "#moreactionnecessary#."
     ],
     "moreactionnecessary": [
-	"It necessary to conduct more operations to achieve the goal"
+        "It necessary to conduct more operations to achieve the goal"
     ],
     "attachements": [
-	"See the following attachements: #attachement#"
+        "See the following attachements: #attachement#"
     ],
     "attachement": [
-	"map",
+        "map",
         "intel report",
-	"key personnel profiles",
+        "key personnel profiles",
         "related action reports"
     ],
     "agencies": [

@@ -1,49 +1,73 @@
 {
-    "origin": [
-        "The target was located in #country#. The #mission# was #result.a#. #however#, #complication#. #cleanup#. It is believed that #enemy# is involved in the incident."
-    ],
     "background": [
-        "#countryprefix# #country#. #relatedoperations#."
+        "#countryprefix# #country#. #support##relatedoperations#"
     ],
     "countryprefix": [
-        "The operation was conducted in"
+        "The operation was conducted in",
+    	"The target country of the operation was"
+    ],
+    "support": [
+	"Additional support was requested from the #agencies#. ",
+    	"Allies from #country# provided additional support. ",
+    	""
     ],
     "relatedoperations": [
-        "This operation was related to operation #codenames#"
+        "This operation was related to operation #codenames#.",
+    	"The operation was a follow-up to operation #codenames#.",
+    	""
     ],
     "mission": [
-        "#missionpurpose#. #missioncontext#. #resistance#. #however#, #complications#. #cleanup#."
+        "#missionpurpose#. #missioncontext##resistance##complications##cleanup#"
     ],
     "missionpurpose": [
         "The purpose of the mission was #task#",
         "The goal was #task#"
     ],
     "task": [
-        "to eliminate an enemy asset",
-        "to recover an asset from the enemy"
+        "to eliminate an enemy asset#workingwith#",
+        "to recover an asset from the enemy",
+	"to gather intel on the #enemy#",
+	"to eliminate a double agent"
+    ],
+    "workingwith": [
+	" working with the #enemy#",
+        ""
     ],
     "missioncontext": [
-        "The situation was very delicate because of the possible political implications",
-        "The operation was conducted on the basis of intel received from allies"
+        "The situation was very delicate because of #context#. ",
+    	"The operational context was difficult because of #context#. ",
+        "The operation was conducted on the basis of intel received from allies in #country#. ",
+	""
+    ],
+    "context": [
+	"the possible political implications",
+        "the increased tensions between allies in the area"
     ],
     "resistance": [
-        "It was assumed that the resistance would be minimal"
+        "It was assumed that the resistance would be minimal. ",
+        "It was assumed that the resistance would be moderate. ",
+	"There was very little intel on the resitance expected. ",
+	""
     ],
     "complications": [
-        "the target was prepared",
-        "the intel was wrong",
-        "there was interference from #enemy#"
+        "#however# the target was well prepared. ",
+        "#however# the intel was significantly misleading. ",
+        "#however# there was interference from #enemy#. ",
+	""
     ],
     "however": [
-        "However"
+        "However,",
+    	"When conducting the operation, it was noted that"
     ],
     "enemy": [
-        "#country#",
+        "operatives from #country#",
         "#terrorists#"
     ],
     "cleanup": [
-        "Exfiltrating assets was #difficulty#",
-        "Removing evidence proved #difficulty#"
+        "Exfiltrating assets was #difficulty#. ",
+        "Removing evidence proved #difficulty#. ",
+	"Some evidence of the operation was possibly leaked to journalists. ",
+	""
     ],
     "difficulty": [
         "easy",
@@ -52,42 +76,51 @@
         "harder than expected"
     ],
     "result": [
-        "#successorfailure# #possibleeffects#."
+        "#successorfailure##possibleeffects#"
     ],
     "successorfailure": [
-        "#success#. #positiveeffects#.",
-        "#failure#."
+        "#success##positiveeffects#",
+        "#failure##negativeeffects#"
     ],
     "success": [
-        "The operation was conducted succesfully",
-        "The operations was a success"
+        "The operation was conducted succesfully. ",
+        "The operations was a success. "
     ],
     "failure": [
-        "The operation failed to meet the goals set",
-        "The operation did not succeed"
+        "The operation failed to completely meet the goals set. ",
+        "The operation did not succeed in all operational goals. "
     ],
     "positiveeffects": [
-        "The operation will result in increased stability in the area"
+        "The operation will result in increased stability in the area. ",
+    	"Intel gathered during the operation will ease subsequent operations. ",
+	""
+    ],
+    "negativeeffects": [
+	"Some key personnel were lost during the operation. ",
+    	"Intel was lost to the enemy during the operation. ",
+	""
     ],
     "possibleeffects": [
-        "It is possible that the operation resulted in diplomatic tensions with #country#"
+        "It is possible that the operation resulted in diplomatic tensions with #country#. ",
+	""
     ],
     "conclusion": [
-        "The goal was achieved in a satisfactory manner.",
-        "#moreactionnecessary#."
+	"More operations in the area would compromise international relations.",
+    	"The operational situation is currently stabile. However, #moreactionnecessary#.",
+        "#moreactionnecessary.capitalize#."
     ],
     "moreactionnecessary": [
-        "It necessary to conduct more operations to achieve the goal",
-        "It is suggested that more operations are conducted"
-    ],
-    "attachements": [
-        "See the following attachements: #attachement#"
+        "it necessary to conduct more operations to achieve the long-term goal",
+        "more operations in the area are advisable",
+        "it is suggested that more operations are conducted to achiece lasting effects"
     ],
     "attachement": [
         "map",
         "intel report",
+	"field report",
         "key personnel profiles",
-        "related action reports"
+        "related action reports",
+	"operation memo"
     ],
     "agencies": [
         "FBI",

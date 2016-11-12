@@ -42,6 +42,7 @@ var output =
 	"See the following attachements:" + "\n" + getAttachements(1,3) + "\n\n" +
 	"Signed by,\n" + getNames(1,1) + "\n\n" +
 	"Classified by " + grammar.flatten('#agencies#') + "\n\n" +
+	"Unlawful possession of this document is subject to harsh penalties." + "\n\n" +
 	"TOP SECRET";
 
 console.log(output);

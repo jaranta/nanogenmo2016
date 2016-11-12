@@ -79,40 +79,68 @@
         "#successorfailure##possibleeffects#"
     ],
     "successorfailure": [
-        "#success##positiveeffects#",
-        "#failure##negativeeffects#"
+        "#success##positiveeffects.capitalize#",
+        "#failure##negativeeffects.capitalize#"
     ],
     "success": [
         "The operation was conducted succesfully. ",
-        "The operations was a success. "
+        "The operations was a success. ",
+	"The operation reached the goals set. "
     ],
     "failure": [
         "The operation failed to completely meet the goals set. ",
         "The operation did not succeed in all operational goals. "
     ],
     "positiveeffects": [
-        "The operation will result in increased stability in the area. ",
-    	"Intel gathered during the operation will ease subsequent operations. ",
+        "the operation will result in increased stability in the area. ",
+    	"intel gathered during the operation will ease subsequent operations. ",
 	""
     ],
     "negativeeffects": [
-	"Some key personnel were lost during the operation. ",
-    	"Intel was lost to the enemy during the operation. ",
+	"some key personnel were lost during the operation. ",
+    	"intel was lost to the enemy during the operation. ",
 	""
     ],
     "possibleeffects": [
         "It is possible that the operation resulted in diplomatic tensions with #country#. ",
+        "Analysis shows it is possible that allies from #country# were #helpedorhindered# by the operation.",
 	""
     ],
+    "helpedorhindered": [
+	"helped",
+    	"aided",
+    	"hindered",
+	"harmed"
+    ],
     "conclusion": [
+	 "#evaluation##moreoperations#"
+     ],
+    "evaluation": [
+	 "The overall operational performance was satisfactory. ",
+         "There were problems with #performanceproblems# perfomance and it is advised that they are subjected to #subjected#. ",
+    	 "It is suggested that participating agents are subjected to #subjected#. ",
+    	 ""
+    ],
+    "performanceproblems": [
+	 "operational lead's",
+         "participating agent's",
+	 "logistical support's"
+    ],
+    "subjected": [
+	"performance evaluation",
+        "psychological evaluation",
+	"reprogramming",
+	"elimination"
+    ],
+    "moreoperations": [
 	"More operations in the area would compromise international relations.",
     	"The operational situation is currently stabile. However, #moreactionnecessary#.",
         "#moreactionnecessary.capitalize#."
     ],
     "moreactionnecessary": [
-        "it necessary to conduct more operations to achieve the long-term goal",
+        "it is necessary to conduct more operations to achieve the long-term goal",
         "more operations in the area are advisable",
-        "it is suggested that more operations are conducted to achiece lasting effects"
+        "it is suggested that more operations are conducted to achieve lasting effects"
     ],
     "attachement": [
         "map",

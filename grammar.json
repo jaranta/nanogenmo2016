@@ -9,7 +9,13 @@
     "support": [
 	"Additional support was requested from the #agencies#. ",
     	"Allies from #country# provided additional support. ",
+	"The operational lead requested additional support, but #nosupport#. ",
     	""
+    ],
+    "nosupport": [
+	"unfortunately none was available in the time frame",
+        "the request was intercepted by hostile agencies",
+        "the area was hard to reach and support did not reach the operational staff"
     ],
     "relatedoperations": [
         "This operation was related to operation #codenames#.",
@@ -41,17 +47,25 @@
     ],
     "context": [
 	"the possible political implications",
-        "the increased tensions between allies in the area"
+        "the increased tensions between allies in the area",
+	"enemy operations in the area"
     ],
     "resistance": [
-        "It was assumed that the resistance would be minimal. ",
-        "It was assumed that the resistance would be moderate. ",
+        "It was assumed that the resistance would be #amountofresistance#. ",
+        "It was assumed that the resistance would be #amountofresistance#. ",
+	"Intel on enemy forces showed that their presence in the area was #amountofresistance#. ",
 	"There was very little intel on the resitance expected. ",
 	""
+    ],
+    "amountofresistance": [
+	"minimal",
+        "moderate",
+	"significant"
     ],
     "complications": [
         "#however# the target was well prepared. ",
         "#however# the intel was significantly misleading. ",
+	"#however# there was an unknown enemy operative active in the area. ",
         "#however# there was interference from #enemy#. ",
 	""
     ],
@@ -60,12 +74,14 @@
     	"When conducting the operation, it was noted that"
     ],
     "enemy": [
-        "operatives from #country#",
+        "unknown operatives from #country#",
+    	"known national operatives from #country#",
         "#terrorists#"
     ],
     "cleanup": [
         "Exfiltrating assets was #difficulty#. ",
         "Removing evidence proved #difficulty#. ",
+	"The operational staff had to be exfiltrated from the area. It was #difficulty#. ",
 	"Some evidence of the operation was possibly leaked to journalists. ",
 	""
     ],
@@ -94,16 +110,19 @@
     "positiveeffects": [
         "the operation will result in increased stability in the area. ",
     	"intel gathered during the operation will ease subsequent operations. ",
+	"assets acquired during the operation will be available for future exploitation",
 	""
     ],
     "negativeeffects": [
 	"some key personnel were lost during the operation. ",
     	"intel was lost to the enemy during the operation. ",
+	"key assets were burned during the process of the operation. ",
 	""
     ],
     "possibleeffects": [
         "It is possible that the operation resulted in diplomatic tensions with #country#. ",
         "Analysis shows it is possible that allies from #country# were #helpedorhindered# by the operation.",
+	"It estimated that the operation drew the attention of #enemy#. ",
 	""
     ],
     "helpedorhindered": [

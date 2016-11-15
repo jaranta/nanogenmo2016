@@ -15,6 +15,18 @@
 }
 
 \renewcommand{\baselinestretch}{1}
+\setlength{\parskip}{0.5ex}
+
+% Change list symbol to *
+\renewcommand{\labelitemi}{*}
+
+% Create new page style so it can be customized
+\makepagestyle{typewriter}
+\makeoddhead{typewriter}{}{TOP SECRET}{}
+\makeevenhead{typewriter}{}{TOP SECRET}{}
+\makeoddfoot{typewriter}{}{TOP SECRET}{\thepage}
+\makeevenfoot{typewriter}{}{TOP SECRET}{\thepage}
+\pagestyle{typewriter}
 
 \begin{document}
 $body$

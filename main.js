@@ -32,7 +32,6 @@ function getAttachements(min, max) {
 
 function censor(text) {
 	// replaces some characters, but the logic is and picks too small strings
-	var randomInt = Math.floor(text.length * Math.random());
 	var startInt = Math.floor(text.length * Math.random());
 	for (i = startInt; i < text.length; i++) {
 		if (text.charAt(i) == " ") {
@@ -46,7 +45,12 @@ function censor(text) {
 	var endInt;
 	for (i = startInt; i < text.length; i++) {
 		// if this is a white space, stop and return the previous location
+		// TODO: Also break at newlines
 		if (text.charAt(i) == " ") {
+			endInt = i - 1;
+			break;
+		}
+		else if (text.charAt(i) == "\n") {
 			endInt = i - 1;
 			break;
 		}

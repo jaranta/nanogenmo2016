@@ -30,8 +30,34 @@ function getAttachements(min, max) {
     return attachementText;
 }
 
-var output = 
-	"Subject: Operation report for PROJECT " + grammar.flatten('#codenames#') + "\n\n" +
+function censor(text) {
+	// replaces some characters, but the logic is and picks too small strings
+	var randomInt = Math.floor(text.length * Math.random());
+	var startInt = Math.floor(text.length * Math.random());
+	for (i = startInt; i < text.length; i++) {
+		if (text.charAt(i) == " ") {
+			i++;
+		}
+		else {
+			startInt = i;
+			break;
+		}
+	}
+	var endInt;
+	for (i = startInt; i < text.length; i++) {
+		// if this is a white space, stop and return the previous location
+		if (text.charAt(i) == " ") {
+			endInt = i - 1;
+			break;
+		}
+		i++;
+	}
+	var redactedChar = "X" // what to replace with
+	return text.replace(text.substring(startInt, endInt), redactedChar.repeat(endInt - startInt));
+}
+
+var output =
+	"# Subject: Operation report for PROJECT " + grammar.flatten('#codenames#') + "\n\n" +
 	"Memorandum for:\n\n" + getNames("* ", 1,5) + "\n\n" + 
 	randomDate(new Date(1900, 0, 1), new Date()).toDateString() + "\n\n" +
 	grammar.flatten('#background#') + "\n\n" +
@@ -40,6 +66,7 @@ var output =
 	grammar.flatten('#conclusion#') + "\n\n" +
 	"See the following attachements:" + "\n\n" + getAttachements(1,3) + "\n\n" +
 	"Signed by,\n\n" + getNames("",1,1) + "\n\n" +
-	"Classified by " + grammar.flatten('#agencies#');
+	"Classified by " + grammar.flatten('#agencies#') + "\n\n";
 
+output = censor(output);
 console.log(output);

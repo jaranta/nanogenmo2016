@@ -30,33 +30,31 @@ function getAttachements(min, max) {
     return attachementText;
 }
 
-function censor(text) {
-	// replaces some characters, but the logic is and picks too small strings
-	var startInt = Math.floor(text.length * Math.random());
-	for (i = startInt; i < text.length; i++) {
-		if (text.charAt(i) == " ") {
-			i++;
-		}
-		else {
-			startInt = i;
-			break;
-		}
-	}
+function censor(text, censoredStringsAmount) {
+	// TODO: Don't gopple up carriage returns
+	// TODO: Define minimum length to avoid censoring prepositions etc.
+	// Maybe make the breaking point "." to censor whole sentences?
+	var randomInt;
+	var startInt;
 	var endInt;
-	for (i = startInt; i < text.length; i++) {
-		// if this is a white space, stop and return the previous location
-		// TODO: Also break at newlines
-		if (text.charAt(i) == " ") {
-			endInt = i - 1;
+	var redactedChar = "X"; // what to replace with
+	randomInt = Math.floor(text.length * Math.random());
+	for (i = randomInt; i < text.length; i++) {
+		if (text.charCodeAt(i) == 32) {
+			startInt = i + 1;
 			break;
 		}
-		else if (text.charAt(i) == "\n") {
-			endInt = i - 1;
-			break;
-		}
-		i++;
 	}
-	var redactedChar = "X" // what to replace with
+	for (i = startInt; i < text.length; i++) {
+		if (text.charCodeAt(i) == 32) {
+			endInt = i; 
+			break;
+		}
+		else if (text.charCodeAt(i) == 13) { // TODO: Check if \n = carriage return?
+			endInt = i - 1;
+			break;
+		}
+	}
 	return text.replace(text.substring(startInt, endInt), redactedChar.repeat(endInt - startInt));
 }
 
@@ -72,5 +70,5 @@ var output =
 	"Signed by,\n\n" + getNames("",1,1) + "\n\n" +
 	"Classified by " + grammar.flatten('#agencies#') + "\n\n";
 
-output = censor(output);
+output = censor(output, 6);
 console.log(output);

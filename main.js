@@ -31,7 +31,6 @@ function getAttachements(min, max) {
 }
 
 function censor(text, censoredStringsAmount) {
-  // TODO: Don't gopple up carriage returns
   // TODO: Define minimum length to avoid censoring prepositions etc.
   // Maybe make the breaking point "." to censor whole sentences?
   var randomInt;
@@ -50,7 +49,7 @@ function censor(text, censoredStringsAmount) {
       endInt = i;
       break;
     }
-    else if (text.charCodeAt(i) == 13) { // TODO: Check if \n = carriage return?
+    else if (text.charCodeAt(i) == 10) {
       endInt = i - 1;
       break;
     }

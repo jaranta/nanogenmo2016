@@ -30,13 +30,11 @@ function getAttachements(min, max) {
   return attachementText;
 }
 
-function censor(text, censoredStringsAmount) {
-  // TODO: Define minimum length to avoid censoring prepositions etc.
-  // Maybe make the breaking point "." to censor whole sentences?
+function censor(text) {
   var randomInt;
   var startInt;
   var endInt;
-  var redactedChar = "X"; // what to replace with
+  var redactedChar = String.fromCharCode(9608); // what to replace with
   randomInt = Math.floor(text.length * Math.random());
   for (i = randomInt; i < text.length; i++) {
     if (text.charCodeAt(i) == 32) {
@@ -45,12 +43,12 @@ function censor(text, censoredStringsAmount) {
     }
   }
   for (i = startInt; i < text.length; i++) {
-    if (text.charCodeAt(i) == 32) {
+    if (text.charCodeAt(i) == 46) {
       endInt = i;
       break;
     }
     else if (text.charCodeAt(i) == 10) {
-      endInt = i - 1;
+      endInt = i;
       break;
     }
   }
@@ -61,13 +59,12 @@ var output =
 "# Subject: Operation report for PROJECT " + grammar.flatten('#codenames#') + "\n\n" +
 "Memorandum for:\n\n" + getNames("* ", 1,5) + "\n\n" +
 randomDate(new Date(1900, 0, 1), new Date()).toDateString() + "\n\n" +
-grammar.flatten('#background#') + "\n\n" +
-grammar.flatten('#mission#') + "\n\n" +
-grammar.flatten('#result#') + "\n\n" +
-grammar.flatten('#conclusion#') + "\n\n" +
+censor(grammar.flatten('#background#')) + "\n\n" +
+censor(grammar.flatten('#mission#')) + "\n\n" +
+censor(grammar.flatten('#result#')) + "\n\n" +
+censor(grammar.flatten('#conclusion#')) + "\n\n" +
 "See the following attachements:" + "\n\n" + getAttachements(1,3) + "\n\n" +
 "Signed by,\n\n" + getNames("",1,1) + "\n\n" +
 "Classified by " + grammar.flatten('#agencies#') + "\n\n";
 
-output = censor(output, 6);
 console.log(output);

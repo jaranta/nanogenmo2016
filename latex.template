@@ -1,10 +1,12 @@
-\documentclass[ms,a4paper]{memoir}
-\chapterstyle{dash}
+\documentclass[a4paper]{memoir}
 \usepackage{ulem}   % underline instead of italics
-% All font size must be normal size 
+\usepackage{fontspec}
+\setmainfont{DejaVu Sans}
+\chapterstyle{dash}
+% All font size must be normal size
 \renewcommand{\large}{\normalsize}
 \renewcommand{\Large}{\normalsize}
-% font hyphenation 
+% font hyphenation
 \usepackage{everysel}
 \EverySelectfont{%
 \fontdimen2\font=0.6em % interword space

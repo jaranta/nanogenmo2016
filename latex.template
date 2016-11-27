@@ -1,4 +1,4 @@
-\documentclass[a4paper]{memoir}
+\documentclass[a4paper,oneside]{memoir}
 \usepackage{ulem}   % underline instead of italics
 \usepackage{fontspec}
 \setmainfont{DejaVu Sans}
